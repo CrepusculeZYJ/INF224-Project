@@ -1,0 +1,35 @@
+\doxysection{manager.\+h}
+\hypertarget{manager_8h_source}{}\label{manager_8h_source}\index{cpp/manager.h@{cpp/manager.h}}
+\mbox{\hyperlink{manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ MANAGER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ MANAGER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{film_8h}{film.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{photo_8h}{photo.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{group_8h}{group.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_manager}{Manager}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_manager_a322cad25d7007438b3a043ad02253d29}{\string~Manager}}();}
+\DoxyCodeLine{00023\ \ \ \ \ shared\_ptr<Photo>\ \mbox{\hyperlink{class_manager_a86c1cb08be6279a575778bcc6d51475d}{createPhoto}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pathname,\textcolor{keywordtype}{int}\ latitude,\textcolor{keywordtype}{int}\ longitude);}
+\DoxyCodeLine{00024\ \ \ \ \ shared\_ptr<Video>\ \mbox{\hyperlink{class_manager_a4421ae883a98af35df703edf13ed2336}{createVideo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pathname,\textcolor{keywordtype}{int}\ duration);}
+\DoxyCodeLine{00025\ \ \ \ \ shared\_ptr<Film>\ \mbox{\hyperlink{class_manager_ac9fef5f72b2e9efc98138ae870779394}{createFilm}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pathname,\textcolor{keywordtype}{int}\ duration,\textcolor{keywordtype}{int}\ numberOfChapters,shared\_ptr<int>\ durationOfChapters);}
+\DoxyCodeLine{00026\ \ \ \ \ shared\_ptr<Group>\ \mbox{\hyperlink{class_manager_aa9e333a7933b8780cb14bba9e1265526}{createGroup}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manager_a65e02099dcfc768e860bbfb7d8a1ffcb}{search}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_manager_a60a01ca9942a3785b3a289331e99ac7d}{searchAndGet}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manager_ae2a4ca41e5b826c38e2636c32068e2a9}{play}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_manager_af37dd9c70034568c5106c8dd5b41f7ff}{playAndGet}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_manager_a3f2d1757fe14e2a38579386cca5c0e30}{remove}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ map<string,shared\_ptr<Multimedia>>\ tableMultimedia;}
+\DoxyCodeLine{00034\ \ \ \ \ map<string,shared\_ptr<Group>>\ tableGroup;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\doxysection{video.\+h}
+\hypertarget{video_8h_source}{}\label{video_8h_source}\index{cpp/video.h@{cpp/video.h}}
+\mbox{\hyperlink{video_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ VIDEO\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ VIDEO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{multimedia_8h}{multimedia.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video}{Video}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_multimedia}{Multimedia}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_video_ab67336c2c5b6227a9635bc7dcd6af543}{Video}}\ (\ )\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ duration=0;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_video_aac28a4dd9ab80755fb4514153f32e697}{Video}}\ (\textcolor{keywordtype}{string}\ name,\textcolor{keywordtype}{string}\ pathname,\textcolor{keywordtype}{int}\ duration)\ :\ \mbox{\hyperlink{class_multimedia}{Multimedia}}(name,pathname)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this-\/>duration=duration;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_video_a07a39b94dddfa02e0b0d7b196e9c9f53}{\string~Video}}\ (\ )\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_a57f903f1d582ac6ef88922c7a6cb8f7f}{getDuration}}\ (\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ duration;}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_aca0f92f98c7b6377aaa23af1645b8172}{setDuration}}\ (\textcolor{keywordtype}{int}\ duration)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ this-\/>duration=duration;}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_a24d5c60954f99dea379671a8958760dd}{print}}\ (ostream\&\ out)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_multimedia_ada4a4457ed453f90dcd36777c885d9e5}{Multimedia::print}}(out);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ out<<\textcolor{stringliteral}{"{}Duration:\ "{}}<<duration<<endl;}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_video_ab1614f8340fb7d24878e14ff6e8c4db4}{getInfo}}\ (\ )\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ info=\textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ info+=\textcolor{stringliteral}{"{}Duration:\ "{}}+to\_string(duration);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ info;}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_aa6fe58b0a467a13eba739cc9745317d8}{play}}\ (\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ command=\textcolor{stringliteral}{"{}start\ "{}}+\mbox{\hyperlink{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c}{getPathname}}()+\textcolor{stringliteral}{"{}\ \&"{}};}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ system(command.data());}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ duration;}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

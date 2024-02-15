@@ -1,0 +1,169 @@
+\doxysection{Multimedia Class Reference}
+\hypertarget{class_multimedia}{}\label{class_multimedia}\index{Multimedia@{Multimedia}}
+
+
+This class is the base class of the multimedia objects.  
+
+
+
+
+{\ttfamily \#include $<$multimedia.\+h$>$}
+
+Inheritance diagram for Multimedia\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_multimedia}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multimedia_a7106753d618df92d53b89328b7ecfe7f}\label{class_multimedia_a7106753d618df92d53b89328b7ecfe7f} 
+{\bfseries Multimedia} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_multimedia_ab1b1344ecd6a17cd2925719acbab6367}{Multimedia}} (string name, string pathname)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_multimedia_ab280f9ce1d0a1291c9b1ab876e854c94}\label{class_multimedia_ab280f9ce1d0a1291c9b1ab876e854c94} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Multimedia} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_multimedia_ace0804f8019ed84df1f3c18eb28cf189}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the multimedia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c}{get\+Pathname}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the path of the multimedia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multimedia_ae132267da6bef8dfed6bf67865efa186}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the multimedia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multimedia_a0dd017e920a5b61d3e546475352219a9}{set\+Pathname}} (string pathname)
+\begin{DoxyCompactList}\small\item\em Set the name of the path of the multimedia. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_multimedia_ada4a4457ed453f90dcd36777c885d9e5}{print}} (ostream \&stream) const
+\begin{DoxyCompactList}\small\item\em Print the multimedia. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_multimedia_a1fa4ae371afc516559955b38e0392acb}{play}} () const =0
+\item 
+virtual string \mbox{\hyperlink{class_multimedia_aa18ce06dfd1bce1ffdb3bff7a9fc4be2}{get\+Info}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the base class of the multimedia objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_multimedia_ab1b1344ecd6a17cd2925719acbab6367}\label{class_multimedia_ab1b1344ecd6a17cd2925719acbab6367} 
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{Multimedia()}{Multimedia()}}
+{\footnotesize\ttfamily Multimedia\+::\+Multimedia (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{pathname }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{class_multimedia}{Multimedia} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia. \\
+\hline
+{\em pathname} & Pathname of the multimedia. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_multimedia_aa18ce06dfd1bce1ffdb3bff7a9fc4be2}\label{class_multimedia_aa18ce06dfd1bce1ffdb3bff7a9fc4be2} 
+\index{Multimedia@{Multimedia}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily virtual string Multimedia\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_film_af32b94147ca96fec1806219bb03791b4}{Film}}, \mbox{\hyperlink{class_photo_a4c3efb2474c379012f27f9c94c38045e}{Photo}}, and \mbox{\hyperlink{class_video_ab1614f8340fb7d24878e14ff6e8c4db4}{Video}}.
+
+\Hypertarget{class_multimedia_ace0804f8019ed84df1f3c18eb28cf189}\label{class_multimedia_ace0804f8019ed84df1f3c18eb28cf189} 
+\index{Multimedia@{Multimedia}!getName@{getName}}
+\index{getName@{getName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Multimedia\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the multimedia. 
+
+\begin{DoxyReturn}{Returns}
+The name of the multimedia. 
+\end{DoxyReturn}
+\Hypertarget{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c}\label{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c} 
+\index{Multimedia@{Multimedia}!getPathname@{getPathname}}
+\index{getPathname@{getPathname}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getPathname()}{getPathname()}}
+{\footnotesize\ttfamily string Multimedia\+::get\+Pathname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the path of the multimedia. 
+
+\begin{DoxyReturn}{Returns}
+The name of the path of the multimedia. 
+\end{DoxyReturn}
+\Hypertarget{class_multimedia_a1fa4ae371afc516559955b38e0392acb}\label{class_multimedia_a1fa4ae371afc516559955b38e0392acb} 
+\index{Multimedia@{Multimedia}!play@{play}}
+\index{play@{play}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void Multimedia\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_photo_ad3334052b3947ce1def7e6a8a554ee4d}{Photo}}, and \mbox{\hyperlink{class_video_aa6fe58b0a467a13eba739cc9745317d8}{Video}}.
+
+\Hypertarget{class_multimedia_ada4a4457ed453f90dcd36777c885d9e5}\label{class_multimedia_ada4a4457ed453f90dcd36777c885d9e5} 
+\index{Multimedia@{Multimedia}!print@{print}}
+\index{print@{print}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Multimedia\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print the multimedia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_video_a24d5c60954f99dea379671a8958760dd}{Video}}, \mbox{\hyperlink{class_film_a113d9a9253e9b601a8009c4de31ea911}{Film}}, and \mbox{\hyperlink{class_photo_a796573de5c83082c6f4307c8a2b96da1}{Photo}}.
+
+\Hypertarget{class_multimedia_ae132267da6bef8dfed6bf67865efa186}\label{class_multimedia_ae132267da6bef8dfed6bf67865efa186} 
+\index{Multimedia@{Multimedia}!setName@{setName}}
+\index{setName@{setName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the name of the multimedia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_multimedia_a0dd017e920a5b61d3e546475352219a9}\label{class_multimedia_a0dd017e920a5b61d3e546475352219a9} 
+\index{Multimedia@{Multimedia}!setPathname@{setPathname}}
+\index{setPathname@{setPathname}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setPathname()}{setPathname()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+Pathname (\begin{DoxyParamCaption}\item[{string}]{pathname }\end{DoxyParamCaption})}
+
+
+
+Set the name of the path of the multimedia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pathname} & Name of the path of the multimedia. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{multimedia_8h}{multimedia.\+h}}\item 
+cpp/\mbox{\hyperlink{multimedia_8cpp}{multimedia.\+cpp}}\end{DoxyCompactItemize}

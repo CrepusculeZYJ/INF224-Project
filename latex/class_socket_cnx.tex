@@ -1,0 +1,39 @@
+\doxysection{Socket\+Cnx Class Reference}
+\hypertarget{class_socket_cnx}{}\label{class_socket_cnx}\index{SocketCnx@{SocketCnx}}
+
+
+Connection with a given client. Each \doxylink{class_socket_cnx}{Socket\+Cnx} uses a different thread.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_socket_cnx_acd004e809a99928860ffa94cbde99ae1}\label{class_socket_cnx_acd004e809a99928860ffa94cbde99ae1} 
+{\bfseries Socket\+Cnx} (\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \&, \mbox{\hyperlink{class_socket}{Socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{class_socket_cnx_aa2ad22fb4fe4b78b3a9337e09475f10e}\label{class_socket_cnx_aa2ad22fb4fe4b78b3a9337e09475f10e} 
+void {\bfseries process\+Requests} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_socket_cnx_ad46b42915ee50072a0307f0116403587}\label{class_socket_cnx_ad46b42915ee50072a0307f0116403587} 
+\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \& {\bfseries server\+\_\+}
+\item 
+\Hypertarget{class_socket_cnx_a51d23b906608701ef811a7d73f0de43e}\label{class_socket_cnx_a51d23b906608701ef811a7d73f0de43e} 
+\mbox{\hyperlink{class_socket}{Socket}} \texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+}
+\item 
+\Hypertarget{class_socket_cnx_af5f1e7aef17b14deb89f65d8c89eb619}\label{class_socket_cnx_af5f1e7aef17b14deb89f65d8c89eb619} 
+\mbox{\hyperlink{class_socket_buffer}{Socket\+Buffer}} \texorpdfstring{$\ast$}{*} {\bfseries sockbuf\+\_\+}
+\item 
+\Hypertarget{class_socket_cnx_a0b358d64acd070e4f54123bd7a011183}\label{class_socket_cnx_a0b358d64acd070e4f54123bd7a011183} 
+std\+::thread {\bfseries thread\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Connection with a given client. Each \doxylink{class_socket_cnx}{Socket\+Cnx} uses a different thread. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp/tcpserver.\+cpp\end{DoxyCompactItemize}

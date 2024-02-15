@@ -1,0 +1,30 @@
+\doxysection{film.\+h}
+\hypertarget{film_8h_source}{}\label{film_8h_source}\index{cpp/film.h@{cpp/film.h}}
+\mbox{\hyperlink{film_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FILM\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FILM\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{video_8h}{video.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_film}{Film}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_video}{Video}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_film_af2835db2b0ef3a87aaa3222f4d9d1ae3}{Film}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_film_af2835db2b0ef3a87aaa3222f4d9d1ae3}{Film}}(\textcolor{keywordtype}{string}\ name,\textcolor{keywordtype}{string}\ pathname,\textcolor{keywordtype}{int}\ duration,\textcolor{keywordtype}{int}\ numberOfChapters,shared\_ptr<int>\ durationOfChapters);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_film_a8dab653f8a6c0635ca5ddbe0bbdd9a25}{\string~Film}}();}
+\DoxyCodeLine{00021\ \ \ \ \ shared\_ptr<int>\ \mbox{\hyperlink{class_film_a6f53c7c09f3820dd9e56873266f64680}{getDurationOfChapters}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_film_a45fabb55732042524b1ba77040176573}{getNumberOfChapters}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_film_a65648866b1329a2ee7c2e76d211e8f3b}{setDurationOfChapters}}(\textcolor{keywordtype}{int}\ numberOfChapters,shared\_ptr<int>\ durationOfChapters);}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_film}{Film}}\&\ \mbox{\hyperlink{class_film_aa0c06810ba54f8ad9cf458dc8a0f4e19}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_film}{Film}}\&\ film);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_film_a113d9a9253e9b601a8009c4de31ea911}{print}}(ostream\&\ stream)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_film_af32b94147ca96fec1806219bb03791b4}{getInfo}}();}
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ shared\_ptr<int>\ durationOfChapters;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ numberOfChapters;}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+\doxysection{TCPServer Class Reference}
+\hypertarget{class_t_c_p_server}{}\label{class_t_c_p_server}\index{TCPServer@{TCPServer}}
+
+
+{\ttfamily \#include $<$tcpserver.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_t_c_p_server_aaf1f42d2d5c7593e2a0349fea7c7648a}{Callback}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_c_p_server_aaed5a80480fd9d616c7773f58906c5e7}{TCPServer}} (Callback const \&callback)
+\item 
+virtual int \mbox{\hyperlink{class_t_c_p_server_a1409041961e91f1dbc4933483b4c3b23}{run}} (int port)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_t_c_p_server_a94abdeb80587f39a869fde6f24522a78}\label{class_t_c_p_server_a94abdeb80587f39a869fde6f24522a78} 
+class {\bfseries TCPLock}
+\item 
+\Hypertarget{class_t_c_p_server_aff1ba1873083d214cbcb808b8091757a}\label{class_t_c_p_server_aff1ba1873083d214cbcb808b8091757a} 
+class {\bfseries Socket\+Cnx}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TCP/\+IP IPv4 server. Supports TCP/\+IP AF\+\_\+\+INET IPv4 connections with multiple clients. One thread is used per client. 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_t_c_p_server_aaf1f42d2d5c7593e2a0349fea7c7648a}\label{class_t_c_p_server_aaf1f42d2d5c7593e2a0349fea7c7648a} 
+\index{TCPServer@{TCPServer}!Callback@{Callback}}
+\index{Callback@{Callback}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily using TCPServer\+::\+Callback}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ std::function<\ bool(std::string\ \textcolor{keyword}{const}\&\ request,\ std::string\&\ response)\ >}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_t_c_p_server_aaed5a80480fd9d616c7773f58906c5e7}\label{class_t_c_p_server_aaed5a80480fd9d616c7773f58906c5e7} 
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}}
+{\footnotesize\ttfamily TCPServer\+::\+TCPServer (\begin{DoxyParamCaption}\item[{Callback const \&}]{callback }\end{DoxyParamCaption})}
+
+initializes the server. The callback function will be called each time the server receives a request from a client.
+\begin{DoxyItemize}
+\item {\itshape request} contains the data sent by the client
+\item {\itshape response} will be sent to the client as a response The connection with the client is closed if the callback returns false. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_t_c_p_server_a1409041961e91f1dbc4933483b4c3b23}\label{class_t_c_p_server_a1409041961e91f1dbc4933483b4c3b23} 
+\index{TCPServer@{TCPServer}!run@{run}}
+\index{run@{run}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int TCPServer\+::run (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts the server. Binds an internal \doxylink{class_server_socket}{Server\+Socket} to {\itshape port} then starts an infinite loop that processes connection requests from clients. \begin{DoxyReturn}{Returns}
+0 on normal termination, or a negative value if the \doxylink{class_server_socket}{Server\+Socket} could not be bound (value is then one of \doxylink{class_socket_a9f68308228badcdd299cd83e62e36976}{Socket\+::\+Errors}). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{tcpserver_8h}{tcpserver.\+h}}\item 
+cpp/tcpserver.\+cpp\end{DoxyCompactItemize}

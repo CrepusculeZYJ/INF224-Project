@@ -1,0 +1,204 @@
+\doxysection{Film Class Reference}
+\hypertarget{class_film}{}\label{class_film}\index{Film@{Film}}
+
+
+This class is a derived class from the \doxylink{class_video}{Video} class. It can be used to store the information of a film.  
+
+
+
+
+{\ttfamily \#include $<$film.\+h$>$}
+
+Inheritance diagram for Film\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_film}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_film_af2835db2b0ef3a87aaa3222f4d9d1ae3}\label{class_film_af2835db2b0ef3a87aaa3222f4d9d1ae3} 
+{\bfseries Film} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{class_film}{Film} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_film_a3d919686e432f4d25366661bde90834f}{Film}} (string name, string pathname, int duration, int number\+Of\+Chapters, shared\+\_\+ptr$<$ int $>$ duration\+Of\+Chapters)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{class_film}{Film} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_film_a8dab653f8a6c0635ca5ddbe0bbdd9a25}\label{class_film_a8dab653f8a6c0635ca5ddbe0bbdd9a25} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Film} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{class_film}{Film} class. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ int $>$ \mbox{\hyperlink{class_film_a6f53c7c09f3820dd9e56873266f64680}{get\+Duration\+Of\+Chapters}} () const
+\begin{DoxyCompactList}\small\item\em Get the duration of the chapters of the film. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_film_a45fabb55732042524b1ba77040176573}{get\+Number\+Of\+Chapters}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of chapters of the film. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_film_a65648866b1329a2ee7c2e76d211e8f3b}{set\+Duration\+Of\+Chapters}} (int number\+Of\+Chapters, shared\+\_\+ptr$<$ int $>$ duration\+Of\+Chapters)
+\begin{DoxyCompactList}\small\item\em Set the duration of the chapters of the film. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_film}{Film}} \& \mbox{\hyperlink{class_film_aa0c06810ba54f8ad9cf458dc8a0f4e19}{operator=}} (const \mbox{\hyperlink{class_film}{Film}} \&film)
+\begin{DoxyCompactList}\small\item\em Overload of the operator= for the \doxylink{class_film}{Film} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_film_a113d9a9253e9b601a8009c4de31ea911}{print}} (ostream \&stream) const
+\begin{DoxyCompactList}\small\item\em Print the information of the film. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_film_af32b94147ca96fec1806219bb03791b4}{get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Get the information of the film. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_video}{Video}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Video} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_video_aac28a4dd9ab80755fb4514153f32e697}{Video}} (string name, string pathname, int duration)
+\begin{DoxyCompactList}\small\item\em Constructor of the class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Video} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_a57f903f1d582ac6ef88922c7a6cb8f7f}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Get the duration of the video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_aca0f92f98c7b6377aaa23af1645b8172}{set\+Duration}} (int duration)
+\begin{DoxyCompactList}\small\item\em Set the duration of the video. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_aa6fe58b0a467a13eba739cc9745317d8}{play}} () const
+\begin{DoxyCompactList}\small\item\em Play the video. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_multimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Multimedia} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_multimedia_ab1b1344ecd6a17cd2925719acbab6367}{Multimedia}} (string name, string pathname)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Multimedia} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{class_multimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_multimedia_ace0804f8019ed84df1f3c18eb28cf189}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the multimedia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c}{get\+Pathname}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the path of the multimedia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multimedia_ae132267da6bef8dfed6bf67865efa186}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the multimedia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multimedia_a0dd017e920a5b61d3e546475352219a9}{set\+Pathname}} (string pathname)
+\begin{DoxyCompactList}\small\item\em Set the name of the path of the multimedia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a derived class from the \doxylink{class_video}{Video} class. It can be used to store the information of a film. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_film_a3d919686e432f4d25366661bde90834f}\label{class_film_a3d919686e432f4d25366661bde90834f} 
+\index{Film@{Film}!Film@{Film}}
+\index{Film@{Film}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{Film()}{Film()}}
+{\footnotesize\ttfamily Film\+::\+Film (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{pathname,  }\item[{int}]{duration,  }\item[{int}]{number\+Of\+Chapters,  }\item[{shared\+\_\+ptr$<$ int $>$}]{duration\+Of\+Chapters }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{class_film}{Film} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the film. \\
+\hline
+{\em pathname} & Pathname of the film. \\
+\hline
+{\em duration} & Duration of the film. \\
+\hline
+{\em number\+Of\+Chapters} & Number of chapters of the film. \\
+\hline
+{\em duration\+Of\+Chapters} & Duration of the chapters of the film. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_film_a6f53c7c09f3820dd9e56873266f64680}\label{class_film_a6f53c7c09f3820dd9e56873266f64680} 
+\index{Film@{Film}!getDurationOfChapters@{getDurationOfChapters}}
+\index{getDurationOfChapters@{getDurationOfChapters}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getDurationOfChapters()}{getDurationOfChapters()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ int $>$ Film\+::get\+Duration\+Of\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the duration of the chapters of the film. 
+
+\begin{DoxyReturn}{Returns}
+The duration of the chapters of the film. 
+\end{DoxyReturn}
+\Hypertarget{class_film_af32b94147ca96fec1806219bb03791b4}\label{class_film_af32b94147ca96fec1806219bb03791b4} 
+\index{Film@{Film}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily string Film\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the information of the film. 
+
+\begin{DoxyReturn}{Returns}
+The information of the film. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_video_ab1614f8340fb7d24878e14ff6e8c4db4}{Video}}.
+
+\Hypertarget{class_film_a45fabb55732042524b1ba77040176573}\label{class_film_a45fabb55732042524b1ba77040176573} 
+\index{Film@{Film}!getNumberOfChapters@{getNumberOfChapters}}
+\index{getNumberOfChapters@{getNumberOfChapters}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getNumberOfChapters()}{getNumberOfChapters()}}
+{\footnotesize\ttfamily int Film\+::get\+Number\+Of\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of chapters of the film. 
+
+\begin{DoxyReturn}{Returns}
+The number of chapters of the film. 
+\end{DoxyReturn}
+\Hypertarget{class_film_aa0c06810ba54f8ad9cf458dc8a0f4e19}\label{class_film_aa0c06810ba54f8ad9cf458dc8a0f4e19} 
+\index{Film@{Film}!operator=@{operator=}}
+\index{operator=@{operator=}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_film}{Film}} \& Film\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_film}{Film}} \&}]{film }\end{DoxyParamCaption})}
+
+
+
+Overload of the operator= for the \doxylink{class_film}{Film} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em film} & \doxylink{class_film}{Film} to copy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_film_a113d9a9253e9b601a8009c4de31ea911}\label{class_film_a113d9a9253e9b601a8009c4de31ea911} 
+\index{Film@{Film}!print@{print}}
+\index{print@{print}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Film\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print the information of the film. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream where the information is printed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_video_a24d5c60954f99dea379671a8958760dd}{Video}}.
+
+\Hypertarget{class_film_a65648866b1329a2ee7c2e76d211e8f3b}\label{class_film_a65648866b1329a2ee7c2e76d211e8f3b} 
+\index{Film@{Film}!setDurationOfChapters@{setDurationOfChapters}}
+\index{setDurationOfChapters@{setDurationOfChapters}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{setDurationOfChapters()}{setDurationOfChapters()}}
+{\footnotesize\ttfamily void Film\+::set\+Duration\+Of\+Chapters (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Chapters,  }\item[{shared\+\_\+ptr$<$ int $>$}]{duration\+Of\+Chapters }\end{DoxyParamCaption})}
+
+
+
+Set the duration of the chapters of the film. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Chapters} & Number of chapters of the film. \\
+\hline
+{\em duration\+Of\+Chapters} & Duration of the chapters of the film. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{film_8h}{film.\+h}}\item 
+cpp/\mbox{\hyperlink{film_8cpp}{film.\+cpp}}\end{DoxyCompactItemize}

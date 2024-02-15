@@ -1,0 +1,224 @@
+\doxysection{Manager Class Reference}
+\hypertarget{class_manager}{}\label{class_manager}\index{Manager@{Manager}}
+
+
+This class is used to manage the multimedia objects and the groups of multimedia objects.  
+
+
+
+
+{\ttfamily \#include $<$manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}\label{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b} 
+{\bfseries Manager} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{class_manager}{Manager} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_manager_a322cad25d7007438b3a043ad02253d29}\label{class_manager_a322cad25d7007438b3a043ad02253d29} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{class_manager}{Manager} class. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_photo}{Photo}} $>$ \mbox{\hyperlink{class_manager_a86c1cb08be6279a575778bcc6d51475d}{create\+Photo}} (const string \&name, const string \&pathname, int latitude, int longitude)
+\begin{DoxyCompactList}\small\item\em Create a photo. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_video}{Video}} $>$ \mbox{\hyperlink{class_manager_a4421ae883a98af35df703edf13ed2336}{create\+Video}} (const string \&name, const string \&pathname, int duration)
+\begin{DoxyCompactList}\small\item\em Create a video. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_film}{Film}} $>$ \mbox{\hyperlink{class_manager_ac9fef5f72b2e9efc98138ae870779394}{create\+Film}} (const string \&name, const string \&pathname, int duration, int number\+Of\+Chapters, shared\+\_\+ptr$<$ int $>$ duration\+Of\+Chapters)
+\begin{DoxyCompactList}\small\item\em Create a film. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_group}{Group}} $>$ \mbox{\hyperlink{class_manager_aa9e333a7933b8780cb14bba9e1265526}{create\+Group}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Create a group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_a65e02099dcfc768e860bbfb7d8a1ffcb}{search}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Search for a multimedia or a group in the manager. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_manager_a60a01ca9942a3785b3a289331e99ac7d}{search\+And\+Get}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Search for a multimedia or a group in the manager and return the information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_ae2a4ca41e5b826c38e2636c32068e2a9}{play}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Play a multimedia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_manager_af37dd9c70034568c5106c8dd5b41f7ff}{play\+And\+Get}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Play a multimedia and return the information. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_manager_a3f2d1757fe14e2a38579386cca5c0e30}{remove}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Remove a multimedia from the manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to manage the multimedia objects and the groups of multimedia objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_manager_ac9fef5f72b2e9efc98138ae870779394}\label{class_manager_ac9fef5f72b2e9efc98138ae870779394} 
+\index{Manager@{Manager}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_film}{Film}} $>$ Manager\+::create\+Film (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{pathname,  }\item[{int}]{duration,  }\item[{int}]{number\+Of\+Chapters,  }\item[{shared\+\_\+ptr$<$ int $>$}]{duration\+Of\+Chapters }\end{DoxyParamCaption})}
+
+
+
+Create a film. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the film. \\
+\hline
+{\em pathname} & Pathname of the film. \\
+\hline
+{\em duration} & Duration of the film. \\
+\hline
+{\em number\+Of\+Chapters} & Number of chapters of the film. \\
+\hline
+{\em duration\+Of\+Chapters} & Duration of the chapters of the film. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the film. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_aa9e333a7933b8780cb14bba9e1265526}\label{class_manager_aa9e333a7933b8780cb14bba9e1265526} 
+\index{Manager@{Manager}!createGroup@{createGroup}}
+\index{createGroup@{createGroup}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createGroup()}{createGroup()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_group}{Group}} $>$ Manager\+::create\+Group (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Create a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the group. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_a86c1cb08be6279a575778bcc6d51475d}\label{class_manager_a86c1cb08be6279a575778bcc6d51475d} 
+\index{Manager@{Manager}!createPhoto@{createPhoto}}
+\index{createPhoto@{createPhoto}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createPhoto()}{createPhoto()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_photo}{Photo}} $>$ Manager\+::create\+Photo (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{pathname,  }\item[{int}]{latitude,  }\item[{int}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Create a photo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the photo. \\
+\hline
+{\em pathname} & Pathname of the photo. \\
+\hline
+{\em latitude} & Latitude of the photo. \\
+\hline
+{\em longitude} & Longitude of the photo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the photo. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_a4421ae883a98af35df703edf13ed2336}\label{class_manager_a4421ae883a98af35df703edf13ed2336} 
+\index{Manager@{Manager}!createVideo@{createVideo}}
+\index{createVideo@{createVideo}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{createVideo()}{createVideo()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_video}{Video}} $>$ Manager\+::create\+Video (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{pathname,  }\item[{int}]{duration }\end{DoxyParamCaption})}
+
+
+
+Create a video. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the video. \\
+\hline
+{\em pathname} & Pathname of the video. \\
+\hline
+{\em duration} & Duration of the video. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the video. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_ae2a4ca41e5b826c38e2636c32068e2a9}\label{class_manager_ae2a4ca41e5b826c38e2636c32068e2a9} 
+\index{Manager@{Manager}!play@{play}}
+\index{play@{play}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Manager\+::play (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Play a multimedia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia to play. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_manager_af37dd9c70034568c5106c8dd5b41f7ff}\label{class_manager_af37dd9c70034568c5106c8dd5b41f7ff} 
+\index{Manager@{Manager}!playAndGet@{playAndGet}}
+\index{playAndGet@{playAndGet}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{playAndGet()}{playAndGet()}}
+{\footnotesize\ttfamily string Manager\+::play\+And\+Get (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Play a multimedia and return the information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The information of the multimedia. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_a3f2d1757fe14e2a38579386cca5c0e30}\label{class_manager_a3f2d1757fe14e2a38579386cca5c0e30} 
+\index{Manager@{Manager}!remove@{remove}}
+\index{remove@{remove}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily string Manager\+::remove (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Remove a multimedia from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of the removal. 
+\end{DoxyReturn}
+\Hypertarget{class_manager_a65e02099dcfc768e860bbfb7d8a1ffcb}\label{class_manager_a65e02099dcfc768e860bbfb7d8a1ffcb} 
+\index{Manager@{Manager}!search@{search}}
+\index{search@{search}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily void Manager\+::search (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Search for a multimedia or a group in the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia or the group to search for \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_manager_a60a01ca9942a3785b3a289331e99ac7d}\label{class_manager_a60a01ca9942a3785b3a289331e99ac7d} 
+\index{Manager@{Manager}!searchAndGet@{searchAndGet}}
+\index{searchAndGet@{searchAndGet}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{searchAndGet()}{searchAndGet()}}
+{\footnotesize\ttfamily string Manager\+::search\+And\+Get (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Search for a multimedia or a group in the manager and return the information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the multimedia or the group to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The information of the multimedia or the group. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{manager_8h}{manager.\+h}}\item 
+cpp/\mbox{\hyperlink{manager_8cpp}{manager.\+cpp}}\end{DoxyCompactItemize}

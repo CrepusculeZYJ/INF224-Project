@@ -1,0 +1,122 @@
+\doxysection{Group Class Reference}
+\hypertarget{class_group}{}\label{class_group}\index{Group@{Group}}
+
+
+This class is a derived class from the STL list class. It can be used to store the information of a group of multimedia objects.  
+
+
+
+
+{\ttfamily \#include $<$group.\+h$>$}
+
+Inheritance diagram for Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_group}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_group_a7b74f9ac68e0504ccf2e2854b7355ff1}\label{class_group_a7b74f9ac68e0504ccf2e2854b7355ff1} 
+{\bfseries Group} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{class_group}{Group} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_group_a39292e9ef457791fcce88cf27943b993}{Group}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{class_group}{Group} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_group_aed00a22ff227ee2657ae44a5cbcedf7c}\label{class_group_aed00a22ff227ee2657ae44a5cbcedf7c} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Group} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{class_group}{Group} class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_group_a0c53394616dda01965f5906f2d98d835}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_group_ab92a841ecc40af75eaa2a8076702d7ff}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_group_a86f3998a3ebd67698d8b33ff1f44c672}{print}} (ostream \&stream) const
+\begin{DoxyCompactList}\small\item\em Print the group. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_group_a5a58cce543393eae7e137710e286a9f2}{get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Get the information of the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a derived class from the STL list class. It can be used to store the information of a group of multimedia objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_group_a39292e9ef457791fcce88cf27943b993}\label{class_group_a39292e9ef457791fcce88cf27943b993} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{class_group}{Group} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the group. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_group_a5a58cce543393eae7e137710e286a9f2}\label{class_group_a5a58cce543393eae7e137710e286a9f2} 
+\index{Group@{Group}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily string Group\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the information of the group. 
+
+\begin{DoxyReturn}{Returns}
+The information of the group. 
+\end{DoxyReturn}
+\Hypertarget{class_group_a0c53394616dda01965f5906f2d98d835}\label{class_group_a0c53394616dda01965f5906f2d98d835} 
+\index{Group@{Group}!getName@{getName}}
+\index{getName@{getName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Group\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the group. 
+
+\begin{DoxyReturn}{Returns}
+The name of the group. 
+\end{DoxyReturn}
+\Hypertarget{class_group_a86f3998a3ebd67698d8b33ff1f44c672}\label{class_group_a86f3998a3ebd67698d8b33ff1f44c672} 
+\index{Group@{Group}!print@{print}}
+\index{print@{print}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Group\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+Print the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_group_ab92a841ecc40af75eaa2a8076702d7ff}\label{class_group_ab92a841ecc40af75eaa2a8076702d7ff} 
+\index{Group@{Group}!setName@{setName}}
+\index{setName@{setName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Group\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the name of the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the group. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{group_8h}{group.\+h}}\item 
+cpp/\mbox{\hyperlink{group_8cpp}{group.\+cpp}}\end{DoxyCompactItemize}

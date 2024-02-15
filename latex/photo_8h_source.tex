@@ -1,0 +1,70 @@
+\doxysection{photo.\+h}
+\hypertarget{photo_8h_source}{}\label{photo_8h_source}\index{cpp/photo.h@{cpp/photo.h}}
+\mbox{\hyperlink{photo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ PHOTO\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ PHOTO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{multimedia_8h}{multimedia.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_photo}{Photo}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_multimedia}{Multimedia}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_photo_a10ef03ede9235052eb9f7d5e950f85d3}{Photo}}\ (\ )\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ latitude=0;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ longitude=0;}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_photo_af1acf803c945a06b06626919a08fa9c2}{Photo}}\ (\textcolor{keywordtype}{string}\ name,\textcolor{keywordtype}{string}\ pathname,\textcolor{keywordtype}{int}\ latitude,\textcolor{keywordtype}{int}\ longitude)\ :\ \mbox{\hyperlink{class_multimedia}{Multimedia}}(name,pathname)\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this-\/>latitude=latitude;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ this-\/>longitude=longitude;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_photo_a1bf707fc71f95a3aa3464bd4e339afd0}{\string~Photo}}\ (\ )\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_photo_ae404d846e916d29e3bb5637e73ad59f2}{getLatitude}}\ (\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ latitude;}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_photo_aea1be7b7541ad5825fd24b727ddbd4b1}{getLongitude}}\ \ (\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ longitude;}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ pair<int,int>\ \mbox{\hyperlink{class_photo_a3fb9fac77a6ebb2ae1601ec5dbb20e87}{getShape}}\ ()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ make\_pair(latitude,longitude);}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_a8a27c920e33ff0e8911c54b488eedd63}{setLatitude}}\ (\textcolor{keywordtype}{int}\ latitude)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ this-\/>latitude=latitude;}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_ae351173cae9a0f84f9a52de3ce37c955}{setLongitude}}\ (\textcolor{keywordtype}{int}\ longitude)\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ this-\/>longitude=longitude;}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_a491a16e15822578c1938244c1db945b8}{setShape}}\ (\textcolor{keywordtype}{int}\ latitude,\textcolor{keywordtype}{int}\ longitude)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ this-\/>latitude=latitude;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ this-\/>longitude=longitude;}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_a08c2221596890927611c16413d79c87a}{setShape}}\ (pair<int,int>\ shape)\ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ latitude=shape.first;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ longitude=shape.second;}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_a796573de5c83082c6f4307c8a2b96da1}{print}}\ (ostream\&\ stream)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_multimedia_ada4a4457ed453f90dcd36777c885d9e5}{Multimedia::print}}(stream);}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ stream<<\textcolor{stringliteral}{"{}Latitude:\ "{}}<<latitude<<endl;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ stream<<\textcolor{stringliteral}{"{}Longitude:\ "{}}<<longitude<<endl;}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_photo_a4c3efb2474c379012f27f9c94c38045e}{getInfo}}\ (\ )\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ info=\textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ info+=\textcolor{stringliteral}{"{}Latitude:\ "{}}+to\_string(latitude)+\textcolor{stringliteral}{"{}\ ,\ "{}};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ info+=\textcolor{stringliteral}{"{}Longitude:\ "{}}+to\_string(longitude);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ info;}
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_photo_ad3334052b3947ce1def7e6a8a554ee4d}{play}}\ (\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ command=\textcolor{stringliteral}{"{}start\ "{}}+\mbox{\hyperlink{class_multimedia_a4b330c898974e8b62cc3220d6381bd7c}{getPathname}}()+\textcolor{stringliteral}{"{}\ \&"{}};}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ system(command.data());}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ latitude;}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{int}\ longitude;}
+\DoxyCodeLine{00123\ \};}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
